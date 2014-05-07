@@ -34,7 +34,7 @@
 			function onSuccess(position) {
 				var element = document.getElementById('geolocation');
 				element.innerHTML = '<h1>Where Am I?</h1>' + 
-									'Longitude: ' + position.coords.longitude + '<br />' + 
+									'Latitude: ' + position.coords.latitude + '<br />' + 
 									'Longitude: ' + position.coords.longitude + '<br />' + 
 									'Altitude: ' + position.coords.altitude + '<br />' + 
 									'Accuracy: ' + position.coords.accuracy + '<br />' + 
@@ -43,7 +43,7 @@
 									'Speed: ' + position.coords.speed + '<br />' + 
 									'Timestamp: ' + position.timestamp + '<br />' + 
 									'<a href="http://www.malimish.com/_locate.php?lat=' + position.coords.latitude + '&long=' + position.coords.longitude + '">Post Location</a><br />' + 
-									'<a href="http://maps.google.com/?ll=' + position.coords.latitude + ',' + position.coords.longitude + '&z=13">See in Google Maps</a><br /><br />' + 
+									'<a href="geo:' + position.coords.latitude + ',' + position.coords.longitude + '?q=My+Current+Location">Open in Google Maps</a><br /><br />' + 
 									'<a href="javascript:startGeoLocate();">Reload</a><br />';
 									
 									
