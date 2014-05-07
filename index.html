@@ -39,7 +39,8 @@
 									'Heading: ' + position.coords.heading + '<br />' + 
 									'Speed: ' + position.coords.speed + '<br />' + 
 									'Timestamp: ' + position.timestamp + '<br />' + 
-									'<a href="http://www.malimish.com/_locate.php?lat=' + position.coords.latitude + '&long=' + position.coords.longitude + '">Post Location</a><br />';
+									'<a href="http://www.malimish.com/_locate.php?lat=' + position.coords.latitude + '&long=' + position.coords.longitude + '">Post Location</a><br />' + 
+									'<a href="http://maps.google.com/?ll=' + position.coords.latitude + ',' + position.coords.longitude + '&z=13">See in Google Maps</a><br />';
 			}
 
 			// onError Callback receives a PositionError object
